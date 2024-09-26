@@ -1,0 +1,23 @@
+services:
+  digi-sol-mongodb:
+    image: mongo:4.0-xenial
+    container_name: digi-sol-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - '27817:27017'
+    volumes:
+      - ./mongo-data:/data/db
+
+  digi-sol-api:
+    build: .
+    container_name: digi-sol-api
+    environment:
+      - NODE_ENV=development
+    ports:
+      - '3240:3000'
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - digi-sol-mongodb

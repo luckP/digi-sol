@@ -1,0 +1,61 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment variable files
+.env
+
+# MongoDB data
+mongo-data/
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Temporary files
+*.swp
+*.swo
+*.swn
+*~
+*.tmp
+*.bak
+*.old
+
+# Output of 'npm pack'
+*.tgz
+
+# Build directories
+build/
+dist/
+.cache/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore error logs
+error.log
