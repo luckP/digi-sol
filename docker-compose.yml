@@ -4,6 +4,7 @@ services:
     container_name: digi-sol-mongodb
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
+      # MONGO_INITDB_ROOT_PASSWORD: 4JPmaaNcOhBkVIe
       MONGO_INITDB_ROOT_PASSWORD: example
     ports:
       - '27817:27017'
